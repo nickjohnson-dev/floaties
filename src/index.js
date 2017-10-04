@@ -1,2 +1,2 @@
-export { getPosition } from './getPosition';
+export { getStyle } from './getStyle';
 export { snap } from './snap';

@@ -5,17 +5,17 @@
 
 Simple helpers for creating popups.
 
-## `getPosition`
+## `getStyle`
 
-Returns object with styles (`bottom`, `left`, `right`, `top`) to achieve desired popup position relative to target. Popup position defaults to top-left of popup aligned with top-left of target.
+Returns object with styles required to achieve desired popup position relative to target. Popup position defaults to top-left of popup aligned with top-left of target.
 
 ```javascript
-import { getPosition } from 'floaties';
+import { getStyle } from 'floaties';
 
 const popup = document.querySelector('.my-popup');
 const target = document.querySelector('.my-target');
 
-const position = getPosition({
+const position = getStyle({
   popupEl: popup,
   targetEl: target,
 });

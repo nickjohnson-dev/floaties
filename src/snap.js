@@ -1,13 +1,11 @@
 import getOr from 'lodash/fp/getOr';
-import { getPosition } from './getPosition';
+import { getStyle } from './getStyle';
 
 export function snap(args) {
   const popupEl = getOr({ style: {} }, 'popupEl', args);
-  const { bottom, left, right, top } = getPosition(args);
+  const style = getStyle(args);
 
-  popupEl.style.position = 'absolute';
-  popupEl.style.bottom = bottom;
-  popupEl.style.left = left;
-  popupEl.style.right = right;
-  popupEl.style.top = top;
+  Object.keys(style).forEach((key) => {
+    popupEl.style[key] = style[key] === '' ? '' : `${style[key]}px`;
+  });
 }

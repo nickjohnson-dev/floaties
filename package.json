@@ -11,9 +11,9 @@
     "lint": "eslint src",
     "prebuild": "npm run clean -s",
     "precommit": "npm run lint",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post",
     "test": "ava --watch",
-    "testonce": "nyc ava",
-    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
+    "testonce": "nyc ava"
   },
   "repository": {
     "type": "git",
