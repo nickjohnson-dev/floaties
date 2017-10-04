@@ -1,6 +1,6 @@
 {
   "name": "floaties",
-  "version": "0.0.0-development",
+  "version": "1.0.0",
   "description": "Simple popup helpers",
   "main": "dist/index.js",
   "scripts": {
