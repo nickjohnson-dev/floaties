@@ -4,3 +4,8 @@
 [![Travis](https://img.shields.io/travis/nickjohnson-dev/floaties.svg?style=flat-square)](https://travis-ci.org/nickjohnson-dev/floaties)
 
 Simple helpers for creating popups.
+
+## API
+
+- [getPosition](docs/getPosition)
+- [snap](docs/snap)
