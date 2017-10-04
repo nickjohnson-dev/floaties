@@ -5,7 +5,18 @@
 
 Simple helpers for creating popups.
 
-## API
+## `getPosition`
 
-- [getPosition](docs/getPosition)
-- [snap](docs/snap)
+Returns object with styles (`bottom`, `left`, `right`, `top`) to achieve desired popup position relative to target. Popup position defaults to top-left of popup aligned with top-left of target.
+
+```javascript
+import { getPosition } from 'floaties';
+
+const popup = document.querySelector('.my-popup');
+const target = document.querySelector('.my-target');
+
+const position = getPosition({
+  popupEl: popup,
+  targetEl: target,
+});
+```
