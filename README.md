@@ -2,7 +2,7 @@
 
 [![npm](https://img.shields.io/npm/v/floaties.svg?style=flat-square)](https://www.npmjs.com/package/floaties)
 [![Travis](https://img.shields.io/travis/nickjohnson-dev/floaties.svg?style=flat-square)](https://travis-ci.org/nickjohnson-dev/floaties)
-[![Codecov](https://img.shields.io/codecov/c/github/codecov/example-python.svg)](https://codecov.io/gh/nickjohnson-dev/floaties)
+[![Codecov](https://img.shields.io/codecov/c/github/nickjohnson-dev/floaties.svg?style=flat-square)](https://codecov.io/gh/nickjohnson-dev/floaties)
 
 Simple helpers for creating popups.
 
