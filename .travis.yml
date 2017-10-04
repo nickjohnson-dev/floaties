@@ -11,7 +11,7 @@ before_script:
   - npm prune
 script:
   - npm run lint
-  - npm run testonce
+  # - npm run testonce
   - npm run build
 after_success:
   - npm run semantic-release

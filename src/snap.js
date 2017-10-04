@@ -1,4 +1,5 @@
 import getOr from 'lodash/fp/getOr';
+import { getPosition } from './getPosition';
 
 export function snap(args) {
   const popupEl = getOr({ style: {} }, 'popupEl', args);
