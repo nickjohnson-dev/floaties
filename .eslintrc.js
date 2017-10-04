@@ -18,17 +18,7 @@ module.exports = {
     'lodash-fp',
   ],
   rules: {
-    'import/no-extraneous-dependencies': [
-      'error',
-      {
-        devDependencies: [
-          '**/*.stories.js',
-          '**/*.test.js',
-          '**/webpack-*.config.js',
-          'wallaby.js',
-        ],
-      },
-    ],
+    'import/no-extraneous-dependencies': 0,
     'import/prefer-default-export': 0,
     'linebreak-style': 0,
     'new-cap': 0,
