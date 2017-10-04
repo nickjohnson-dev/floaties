@@ -3,6 +3,11 @@ import { getStyle } from './getStyle';
 
 export function snap(args) {
   const popupEl = getOr({ style: {} }, 'popupEl', args);
+
+  popupEl.style.height = '';
+  popupEl.style.position = 'absolute';
+  popupEl.style.width = '';
+
   const style = getStyle(args);
 
   Object.keys(style).forEach((key) => {

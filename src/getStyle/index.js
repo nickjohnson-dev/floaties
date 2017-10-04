@@ -33,7 +33,6 @@ export function getStyle(args) {
     bottom: getBottom(args),
     height: getHeight(args),
     left: getLeft(args),
-    position: 'absolute',
     right: getRight(args),
     top: getTop(args),
     width: getWidth(args),
