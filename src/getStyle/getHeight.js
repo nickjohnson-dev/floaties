@@ -2,6 +2,7 @@ import getOr from 'lodash/fp/getOr';
 import invoke from 'lodash/fp/invoke';
 
 export function getHeight(args) {
+  const desiredHeight = getOr('', 'desiredHeight', args);
   const windowHeight = getOr(0, 'window.innerHeight', global);
   const containerHeight = getOr(windowHeight, 'containerHeight', args);
   const popupRect = invoke('popupEl.getBoundingClientRect', args);
@@ -9,5 +10,5 @@ export function getHeight(args) {
 
   if (popupHeight > containerHeight) return containerHeight;
 
-  return '';
+  return desiredHeight;
 }

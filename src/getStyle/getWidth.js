@@ -2,6 +2,7 @@ import getOr from 'lodash/fp/getOr';
 import invoke from 'lodash/fp/invoke';
 
 export function getWidth(args) {
+  const desiredWidth = getOr('', 'desiredWidth', args);
   const windowWidth = getOr(0, 'window.innerWidth', global);
   const containerWidth = getOr(windowWidth, 'containerWidth', args);
   const popupRect = invoke('popupEl.getBoundingClientRect', args);
@@ -9,5 +10,5 @@ export function getWidth(args) {
 
   if (popupWidth > containerWidth) return containerWidth;
 
-  return '';
+  return desiredWidth;
 }

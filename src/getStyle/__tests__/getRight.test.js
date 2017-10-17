@@ -132,6 +132,7 @@ test('should return "" when popupHorizontal !== "right"', (t) => {
 test('should return "" when targetHorizontal !== "right" or "left"', (t) => {
   const expected = '';
   const result = getRight({
+    popupHorizontal: 'right',
     targetHorizontal: 'foo',
   });
   t.is(result, expected);

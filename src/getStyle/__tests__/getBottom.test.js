@@ -132,6 +132,7 @@ test('should return "" when popupVertical !== "bottom"', (t) => {
 test('should return "" when targetVertical !== "bottom" or "top"', (t) => {
   const expected = '';
   const result = getBottom({
+    popupVertical: 'bottom',
     targetVertical: 'foo',
   });
   t.is(result, expected);
